@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        #div {
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            padding: 30px;
+        }
+        .cssClass {
+            color: greenyellow;
+            background-color: violet;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>JQuery Events</h1>
+    <p id="event_cl">click(): Ấn để thấy điều kì diệu</p>
+    <p id="event_dbcl">bdllclick(): Ấn 2 lần để thấy điều kì diệu</p>
+    <p id="event_mouseenter">mouseenter(): Di chuột vào để thấy điều kì diệu</p>
+    <p id="event_mouseleave">mouseleave(): Di chuột vào và rời ra để thấy điều kì diệu</p>
+    <p id="event_hover">hover(): Di chuột qua để thấy điều kì diệu</p>
+    <p id="event_on">on(): Thao tác chuột để thấy điều kì diệu (click,dblclick)</p>
+    
+    <h1>JQuery Effects</h1>
+    <button id="effect_hd" style="width: 520px; background-color: gray;border: 1px solid gray; padding: 10px 0; color: white; font-size: 25px;">Ấn để thấy điều kì diệu</button>
+    <div id="effect_hd_2" style="background-color: gray; color: white; font-size: 20px; width: 500px; padding: 10px;">
+        <p><span style="color: red">Hide/Show:</span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia reiciendis cupiditate sit corrupti explicabo, ratione recusandae error repellendus eveniet sint dolorum, saepe fugit ea quasi quis perspiciatis reprehenderit omnis fuga!</p>
+    </div><br>
+    <button id="effect_fade" style="width: 520px; background-color: gray;border: 1px solid gray; padding: 10px 0; color: white; font-size: 25px;">Ấn để thấy điều kì diệu</button>
+    <div id="effect_fade_2" style="background-color: gray; color: white; font-size: 20px; width: 500px; padding: 10px;">
+        <p><span style="color: red">Fade in/out:</span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia reiciendis cupiditate sit corrupti explicabo, ratione recusandae error repellendus eveniet sint dolorum, saepe fugit ea quasi quis perspiciatis reprehenderit omnis fuga!</p>
+    </div>
+    <br>
+    <br>
+    <button id="effect_slide" style="width: 520px; background-color: gray;border: 1px solid gray; padding: 10px 0; color: white; font-size: 25px;">Ấn để thấy điều kì diệu</button>
+    <div id="effect_slide_2" style="background-color: gray; color: white; font-size: 20px; width: 500px; padding: 10px;">
+        <p><span style="color: red">Slide down/up:</span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia reiciendis cupiditate sit corrupti explicabo, ratione recusandae error repellendus eveniet sint dolorum, saepe fugit ea quasi quis perspiciatis reprehenderit omnis fuga!</p>
+    </div><br>
+
+    <h1>JQuery HTML </h1>
+    <h2>JQuery Get Content: text() html() val() attr()</h2>
+    <p id="html_get">this is <b>content</b> of P</p>
+    <button id="get_text">Click to take Text</button>
+    <button id="get_html">Click to take HTML</button><br>
+    <p>Chat to see something</p><input id="html_get_val" type="text">
+    <button id="get_val">Click to take Val</button><br>
+    <p><a href="https://facebook.com" id="html_get_attr">facebook.com</a></p>
+    <button id="get_attr">Click to take Attr of link</button>
+
+    <h2>JQuery Set Content: text() html() val() attr()</h2>
+    <p><a href="https://facebook.com" id="html_set_all">facebook.com</a></p>
+    <button id="set_all">Click to set by Text, HTML, Val of link</button>
+    <p><a href="https://facebook.com" id="html_set_all_2">facebook.com</a></p>
+    <button id="set_all_2">Click to set by Attr of link</button>
+
+    <h2>JQuery Add Content: append() prepend() after() before()</h2>
+    <p>Danh muc do an</p>
+    <ul>
+        <li>ga</li>
+        <li>lon</li>
+        <li>bo</li>
+    </ul>
+    <button id="html_add_ap">Click to add "rau" w append</button>
+    <button id="html_add_pre">Click to add "rau w prepend"</button><br>
+    <button id="html_add_af">Click to add "rau" w after</button>
+    <button id="html_add_bf">Click to add "rau" w before</button>
+
+    <h2>JQuery Remove Content: remove() empty()</h2>
+    <div id="div">Say hi with the world
+        <p id="remove_1">xin chao</p>
+        <p id="remove_2">ni hao</p>
+        <p id="remove_3">hiii</p>
+        <p id="remove_4">konnichiwa</p>
+        <p id="remove_5">an ny-ong ha se o</p>
+    </div>
+    <button id="html_remove" >Click to remove all w remove</button><br>
+    <button id="html_empty" >Click to remove chirld w empty</button>
+    
+    <h2>JQuery CSS Clases Content: addClass() removeClass() toggleClass() css()</h2>
+    <p id="cssClass">Xin chao cac ban</p>
+    <button id="html_cssClass">Click to style the text w toggleClass</button><br>
+    <button id="html_cssClass_2">Click to style the text w css</button>
+    
+    <script src="index.js"></script>
+</body>
+</html>
